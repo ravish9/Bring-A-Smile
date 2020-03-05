@@ -109,7 +109,7 @@
         android:id="@+id/imageView3"
         android:layout_width="318dp"
         android:layout_height="212dp"
-        app:srcCompat="@drawable/default"
+        app:srcCompat="@drawable/logo"
         tools:layout_editor_absoluteX="46dp"
         tools:layout_editor_absoluteY="16dp" />
 

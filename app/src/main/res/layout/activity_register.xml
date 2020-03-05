@@ -76,7 +76,7 @@
         android:id="@+id/imageView2"
         android:layout_width="283dp"
         android:layout_height="187dp"
-        app:srcCompat="@drawable/default"
+        app:srcCompat="@drawable/logo"
         tools:layout_editor_absoluteX="64dp"
         tools:layout_editor_absoluteY="20dp" />
 
