@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBFCFD"
+    android:background="@drawable/gradient"
     tools:context=".MainActivity">
 
     <Button
@@ -61,11 +61,10 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="335dp"
-        android:layout_height="176dp"
-        android:layout_marginTop="36dp"
+        android:layout_width="362dp"
+        android:layout_height="249dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.326"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/default" />
