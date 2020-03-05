@@ -20,31 +20,35 @@
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="313dp"
+        android:layout_marginBottom="384dp"
+        android:background="@android:color/transparent"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColor="#0B0B0B"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.363" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
         android:textColor="#0B0A0A"
+        android:textColorHint="#F6F2F2"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.396" />
+        app:layout_constraintVertical_bias="0.541" />
 
     <TextView
         android:id="@+id/textView"
@@ -53,11 +57,12 @@
         android:layout_marginStart="163dp"
         android:layout_marginEnd="163dp"
         android:text="Not registered? Sign Up here"
+        android:textColor="#FAF8F8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.567" />
+        app:layout_constraintVertical_bias="0.72" />
 
     <Button
         android:id="@+id/signIn"
@@ -90,28 +95,20 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.635" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="131dp"
-        android:layout_height="89dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="295dp"
+        android:layout_height="285dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="318dp"
-        android:layout_height="212dp"
-        app:srcCompat="@drawable/default"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:srcCompat="@drawable/logo3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
