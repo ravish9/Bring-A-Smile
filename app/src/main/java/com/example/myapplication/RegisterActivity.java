@@ -22,7 +22,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-
+import android.view.MotionEvent;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -72,8 +72,8 @@ public class RegisterActivity extends AppCompatActivity {
                             }
                             else {
                                 startActivity(new Intent(RegisterActivity.this,MainActivity.class));
-                                Log.d(TAG, "createUserWithEmail:success");
-                                FirebaseUser user = mFirebaseAuth.getCurrentUser();
+                               // Log.d(TAG, "createUserWithEmail:success");
+                               FirebaseUser user = mFirebaseAuth.getCurrentUser();
                                 updateUI(user);
                             }
                         }
@@ -103,7 +103,5 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 }
-
-
 
 

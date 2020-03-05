@@ -33,7 +33,6 @@ public class LoginActivity extends AppCompatActivity {
     static SharedPreferences prefs;
     static SharedPreferences.Editor editor;
     float x1, x2, y1, y2;
-    private String TAG;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -140,9 +139,6 @@ public class LoginActivity extends AppCompatActivity {
                                 editor.putBoolean("registered", true);
                                 editor.commit();
                                 startActivity(new Intent(LoginActivity.this,MainActivity.class));
-                                Log.d(TAG, "signInWithEmail:success");
-                                FirebaseUser user = mFirebaseAuth.getCurrentUser();
-                                updateUI(user);
                             }
                         }
                     });
@@ -158,13 +154,10 @@ public class LoginActivity extends AppCompatActivity {
         tvSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intSignUp = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intSignUp = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intSignUp);
             }
         });
-    }
-
-    private void updateUI(FirebaseUser user) {
     }
 
     public boolean onTouchEvent(MotionEvent touchEvent){
@@ -189,11 +182,9 @@ public class LoginActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         mFirebaseAuth.addAuthStateListener(mAuthStateListener);
-
     }
 
 
 
-
-
 }
+
