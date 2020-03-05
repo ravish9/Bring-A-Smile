@@ -9,54 +9,55 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
         android:layout_marginBottom="313dp"
-        android:background="@android:drawable/editbox_background"
+        android:background="@android:color/transparent"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
-        android:textColor="#090909"
-        android:textColorHint="#090909"
+        android:textColor="#FDFCFC"
+        android:textColorHint="#FFFFFF"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.745" />
+        app:layout_constraintVertical_bias="0.866" />
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="260dp"
+        android:layout_height="65dp"
         android:layout_marginBottom="8dp"
-        android:background="#FFFFFF"
+        android:background="?android:attr/textColorPrimaryInverse"
         android:ems="10"
         android:hint="Password"
         android:inputType="textPassword"
-        android:textColor="#070707"
-        android:textColorHint="#090909"
+        android:textColor="#FAF9F9"
+        android:textColorHint="#FFFEFE"
         android:textColorLink="#FFFFFF"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.565"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.505" />
+        app:layout_constraintVertical_bias="0.589" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Already have an account? Sign in here"
-        android:textColor="#0E0E0E"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.744" />
+        app:layout_constraintVertical_bias="0.778" />
 
     <Button
         android:id="@+id/button2"
@@ -65,19 +66,21 @@
         android:layout_height="55dp"
         android:background="@android:color/holo_blue_dark"
         android:text="Sign Up"
-        android:textColor="#101010"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.64" />
+        app:layout_constraintVertical_bias="0.689" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="283dp"
-        android:layout_height="187dp"
-        app:srcCompat="@drawable/default"
-        tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="20dp" />
+        android:id="@+id/imageView5"
+        android:layout_width="295dp"
+        android:layout_height="285dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
