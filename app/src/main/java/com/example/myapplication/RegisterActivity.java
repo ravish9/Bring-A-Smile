@@ -72,8 +72,8 @@ public class RegisterActivity extends AppCompatActivity {
                             }
                             else {
                                 startActivity(new Intent(RegisterActivity.this,MainActivity.class));
-                                Log.d(TAG, "createUserWithEmail:success");
-                                FirebaseUser user = mFirebaseAuth.getCurrentUser();
+                               // Log.d(TAG, "createUserWithEmail:success");
+                               FirebaseUser user = mFirebaseAuth.getCurrentUser();
                                 updateUI(user);
                             }
                         }
@@ -101,25 +101,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-    public boolean onTouchEvent(MotionEvent touchEvent){
-        switch(touchEvent.getAction()){
-            case MotionEvent.ACTION_DOWN:
-                x1 = touchEvent.getX();
-                y1 = touchEvent.getY();
-                break;
-            case MotionEvent.ACTION_UP:
-                x2 = touchEvent.getX();
-                y2 = touchEvent.getY();
-                if(x1 > x2){
-                    Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
-                    startActivity(i);
-                }
-                break;
-        }
-        return false;
-    }
+
 }
-
-
 
 

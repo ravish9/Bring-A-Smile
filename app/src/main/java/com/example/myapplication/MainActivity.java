@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.content.Intent;
 import com.google.firebase.auth.FirebaseAuth;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 @Override
 public void onClick(View v) {
 
-        Intent intToShopping = new Intent(MainActivity.this, Organisation.class);
+        Intent intToShopping = new Intent(MainActivity.this, OrganisationActivity.class);
         startActivity(intToShopping);
         }
         });
